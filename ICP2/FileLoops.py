@@ -1,4 +1,5 @@
 inFile = open("sampletextfile.txt",'r')
+outFile = open('sampleoutput.txt' , 'w')
 ans = {}
 line = inFile.readline()
 while line != "":
@@ -13,4 +14,7 @@ while line != "":
     line = inFile.readline()
 
 for i in ans:
-    print (i,':',ans[i])
+    temp =i+':'+str(ans[i])
+    print (temp)
+    outFile.write(temp+'\n')
+outFile.close()
