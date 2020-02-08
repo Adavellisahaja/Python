@@ -1,5 +1,4 @@
 import numpy as np
-
 s = np.random.randint(0, 20, 15)
 print(s)
 a= s.reshape((3,5))
@@ -12,7 +11,7 @@ print(y)
 z = a[2]
 z[np.where(z==np.max(z))] = 0
 print(z)
-b = [x , y, z]
+b = np.vstack([x,y,z])
 print(b)
 
 
