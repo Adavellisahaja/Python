@@ -26,7 +26,7 @@ train_labels_one_hot = to_categorical(train_labels)
 test_labels_one_hot = to_categorical(test_labels)
 
 #creating network
-model = Functional()
+model = Sequential()
 model.add(Dense(512, activation='relu', input_shape=(dimData,)))
 model.add(Dense(512, activation='relu'))
 model.add(Dense(10, activation='softmax'))
